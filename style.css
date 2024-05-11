@@ -1,0 +1,12 @@
+.roll-history {
+    /* Styles for the roll history container */
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable scrolling for long history */
+  }
+  
+  .roll-history-item {
+    /* Styles for individual roll entries */
+    margin-bottom: 5px;
+  }
