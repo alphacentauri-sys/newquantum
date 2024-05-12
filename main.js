@@ -1,9 +1,7 @@
 const rollHistory = document.getElementById('roll-history');
 const diceContainer = document.querySelector('.dice-container');
 
-const ws = new WebSocket("ws://" + location.host + ":3000"); // Connect to WebSocket server
-
-
+const ws = new WebSocket(location.origin.replace(/^http/, 'ws') + ":3000"); // Connect to WebSocket server
 
 let clientId; // Variable to store the client ID
 
