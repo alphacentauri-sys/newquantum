@@ -1,7 +1,10 @@
 const rollHistory = document.getElementById('roll-history');
 const diceContainer = document.querySelector('.dice-container');
 
-const ws = new WebSocket(location.origin.replace("https", 'wws') + ":443"); // Connect to WebSocket server
+const ws = new WebSocket(location.origin.replace(/^https/, 'ws') + ":443"); // Connect to WebSocket server
+
+
+
 
 let clientId; // Variable to store the client ID
 
